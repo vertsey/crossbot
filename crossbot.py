@@ -10,7 +10,7 @@ with open('token', 'r') as f:
 
 class MyClient(discord.Client):
     async def on_ready(self):
-        activity = discord.Game(name="post crosshairs in the #business channel")
+        activity = discord.Game(name="post crosshairs in the #bot channel")
         await bot.change_presence(activity=activity)
         print('Logged on as', self.user)
 
