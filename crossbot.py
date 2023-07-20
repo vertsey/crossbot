@@ -39,7 +39,7 @@ async def on_message(message):
             return
 
         if message.channel.name == "bot":
-            await send_crosshair(message)
+            await send_crosshair(message.content)
         else:
             return
 
